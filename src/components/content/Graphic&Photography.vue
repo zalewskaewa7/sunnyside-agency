@@ -41,9 +41,12 @@ const photography = ref(
         
         .graphic{
             background-image: url("../../images/desktop/image-graphic-design.jpg");
+            color: hsl(167, 40%, 24%);
+            
         }
         .photography{
-            background-image: url("../../images/desktop/image-photography.jpg"),
+            background-image: url("../../images/desktop/image-photography.jpg");
+            color:  hsl(198, 62%, 26%);;
         }
 
     .graphicPhtography{
@@ -52,17 +55,26 @@ const photography = ref(
         flex: 0 45%;
         flex-flow: row wrap;
         align-items: flex-end;
-
-        text-transform: capitalize;
-
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
         h2{
             flex:1 100%;
-             padding: 10%;
+             padding: 60% 10% 2% 10%;
+             font-family: "Fraunces";
+             font-size: 1.8rem;
+            text-transform: capitalize;
+
         }
         p{
             flex:1 100%;
+            padding:  2% 15% 5% 15%; 
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.5;
+            width: 40%;
 
-            padding: 10%; 
         }
 
     }

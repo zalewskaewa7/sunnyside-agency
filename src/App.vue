@@ -25,6 +25,10 @@ import Content from './components/content/Content.vue'
     font-family: Fraunces;
     src: url('./assets/fonts/Fraunces/static/Fraunces_9pt-Black.ttf');
 }
+@font-face {
+    font-family: BarlowThin;
+    src: url('./assets/fonts/Barlow/Barlow-SemiBold.ttf');
+}
 *,
 *::before,
 *::after {
