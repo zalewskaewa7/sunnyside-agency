@@ -26,7 +26,16 @@
 .contactListElement{
     color: hsl(212, 27%, 19%);
     background-color:  hsl(0, 0%, 100%);
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 3% 6%;
+    font-family:"BarlowThin";
+
+    
 }
+
+.contactListElement:hover{
+        color:hsl(0, 0%, 100%);
+        background-color: rgba(240, 243, 245, 0.37);
+    }
+
 </style>

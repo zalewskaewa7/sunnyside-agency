@@ -1,5 +1,4 @@
 <script setup>
-    import { ref } from 'vue'
 
 const testimonials = [
 { imgSrc: "../../images/image-emily.jpg", text: "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.", author: "Emily R.", job: "Marketing Director" }, 

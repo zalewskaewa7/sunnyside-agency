@@ -5,7 +5,7 @@ import Menu from './Menu.vue'
 <template>
     <div class="headerComponent">
         <div class="divLogoImg">
-                    <img alt="Vue logo" class="logo" src="../images/logo.svg" />
+                    <img alt="logo" class="logo" src="../images/logo.svg" />
 
         </div>
         <Menu />

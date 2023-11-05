@@ -1,4 +1,5 @@
 <script setup>
+import Footer from './components/Footer.vue';
 import Header from './components/Header.vue'
 import Content from './components/content/Content.vue'
 
@@ -13,6 +14,9 @@ import Content from './components/content/Content.vue'
   <main>
 <Content />
   </main>
+  <footer>
+    <Footer />
+  </footer>
 </template>
 
 <style lang="scss" scoped>
@@ -52,5 +56,10 @@ body {
 header{
   margin: 0;
   padding: 0;
+}
+footer{
+  display: flex;
+  justify-content: center;
+    background-color: hsl(168, 34%, 41%, .6);
 }
 </style>
