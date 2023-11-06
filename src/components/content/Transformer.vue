@@ -42,11 +42,17 @@
                 color: hsl(212, 27%, 19%);
                 text-transform: uppercase;
                 font-family: "Barlow";
-                font-size: 18px;
+                font-size: 1.1rem;
                 border-radius: 8px;
                 height: 8px;
                 width: 115px;
                 box-shadow: -5px 18px 0 0 hsl(51, 100%, 49%, 0.3);               
+            }
+
+            span:hover{
+                cursor: pointer;
+                box-shadow: -5px 18px 0 0 hsl(51, 100%, 49%);               
+
             }
     
         }               
@@ -55,6 +61,39 @@
             width: 50%;
             height: auto;
         }
+    }
+
+    @media all and (max-width:  375px)  {
+        .transformerComponent{
+            
+            .transformImg{
+            flex: 1 100%;
+            order: 1;
+            width: 50%;
+            height: auto;
+        }
+        .transformText{
+        order: 2;
+        flex: 1 100%;
+        justify-content: center;
+
+            h2{
+                font-size: 2rem;
+                text-align: center;
+
+            }
+            p{
+                font-size: 1rem;
+                text-align: center;
+
+            }
+            span{
+                font-size: 1rem;
+
+            }
+        }
+        }
+
     }
     
     </style>

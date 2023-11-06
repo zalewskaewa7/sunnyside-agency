@@ -14,28 +14,37 @@
     align-items: center;
     color:  hsl(0, 0%, 100%);
     margin: 0 2%;
-    
-}
-.menu li{
-    list-style-type: none;
-    margin: 4%;
-    font-size: 1.3rem;
-    cursor:pointer;
 
-}
-.contactListElement{
-    color: hsl(212, 27%, 19%);
-    background-color:  hsl(0, 0%, 100%);
-    border-radius: 25px;
-    padding: 3% 6%;
-    font-family:"BarlowThin";
+        
+        li{
+        list-style-type: none;
+        margin: 4%;
+        font-size: 1.3rem;
+        cursor:pointer;
 
-    
-}
-
-.contactListElement:hover{
-        color:hsl(0, 0%, 100%);
-        background-color: rgba(240, 243, 245, 0.37);
     }
+    .contactListElement{
+        color: hsl(212, 27%, 19%);
+        background-color:  hsl(0, 0%, 100%);
+        border-radius: 25px;
+        padding: 3% 6%;
+        font-family:"BarlowThin";
+
+        
+    }
+
+    .contactListElement:hover{
+            color:hsl(0, 0%, 100%);
+            background-color: rgba(240, 243, 245, 0.37);
+        }
+}
+
+@media all and (max-width:  375px)  {
+        .menu{
+            display:none;
+            }
+
+        }
+
 
 </style>

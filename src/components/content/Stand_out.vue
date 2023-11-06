@@ -14,6 +14,7 @@
     <style lang="scss">
     .StandOutComponent{
         display:flex;
+        flex: 1 100%;
         flex-flow: row wrap;
         justify-content:center;
     
@@ -46,11 +47,16 @@
                 color: hsl(212, 27%, 19%);
                 text-transform: uppercase;
                 font-family: "Barlow";
-                font-size: 18px;
+                font-size: 1.1rem;
                 border-radius: 8px;
                 height: 8px;
                 width: 115px;
                 box-shadow: -5px 18px 0 0 hsl(7, 99%, 70%, 0.3);               
+            }
+            span:hover{
+                cursor: pointer;
+                box-shadow: -5px 18px 0 0 hsl(7, 99%, 70%);               
+
             }
             
     
@@ -61,5 +67,44 @@
             height: auto;
         }
     }
+
+    @media all and (max-width:  375px)  {
+
+        .StandOutComponent{
+            .standOutImg{
+                flex: 1 100%;
+                order:1;
+                width: 70%;
+            }
+            .standOutText{
+                flex: 1 100;
+                justify-content: center;
+                order: 2;
+
+                h2{
+                font-size: 2rem;
+                text-align: center;
+
+            }
+            p{
+                font-size: 1rem;
+                text-align: center;
+
+            }
+
+            
+            span{
+                text-align: center;
+                font-size: 1rem;
+
+       
+            }
+
+            }
+
+
+        }
+    }
+
     
     </style>

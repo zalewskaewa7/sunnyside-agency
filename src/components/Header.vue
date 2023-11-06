@@ -1,5 +1,7 @@
 <script setup>
 import Menu from './Menu.vue'
+import MobileMenu from './MobileMenu.vue';
+
 
 </script>
 <template>
@@ -9,15 +11,16 @@ import Menu from './Menu.vue'
 
         </div>
         <Menu />
+        <MobileMenu />
         <div class="headerComponentBottom">
             <h1>We are creatives</h1>
-        <img alt="Vue logo" class="arrowDown" src="../images/icon-arrow-down.svg" />
+        <img alt="arrow down" class="arrowDown" src="../images/icon-arrow-down.svg" />
 
         </div>
         
     </div>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 .headerComponent{
     margin: 0;
     background-image: url("../images/desktop/image-header.jpg");
@@ -67,5 +70,39 @@ h1{
     width: 10%;
     height:auto;
 }
+
+@media all and (max-width:  375px)  {
+
+    .headerComponent{
+        padding: 6% 0 20% 0;
+        background-image: url("../images/mobile/image-header.jpg");
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+.headerComponentBottom{
+
+        h1{
+             padding: 12% 0% 0% 0%;
+            font-size: 2.5rem;  
+        }
+
+        .arrowDown{
+            margin: 15% 0 0 0;
+            flex: 0 10%;
+            width: 15%;
+            height:auto;
+        }
+
+}
+    .divLogoImg{
+    display:flex;
+    flex: 0 45%;
+    align-items: center;
+    margin: 4%;
+   
+    }
+}
+}
+
 
 </style>

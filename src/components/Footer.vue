@@ -43,6 +43,8 @@ const icons=[
             height: auto;
             cursor:pointer;
             filter: invert(68%) sepia(60%) saturate(6890%) hue-rotate(163deg) brightness(97%) contrast(101%);
+            filter: invert(50%) sepia(19%) saturate(939%) hue-rotate(118deg) brightness(94%) contrast(84%);
+
     }
         }
 
@@ -59,6 +61,10 @@ const icons=[
                 font-family: "Barlow";
 
             }
+            li:hover{
+                cursor: pointer;
+                color:  hsl(0, 0%, 100%);
+            }
         }
 
         .mediaIconsDiv{
@@ -70,9 +76,16 @@ const icons=[
 
                 img{
                     padding: 2%;
-                    color:hsl(168, 34%, 41%);
+                    // filter: invert(68%) sepia(60%) saturate(6890%) hue-rotate(163deg) brightness(97%) contrast(101%);
+                    // filter: invert(48%) sepia(12%) saturate(1445%) hue-rotate(120deg) brightness(99%) contrast(89%);
+                    filter: invert(50%) sepia(19%) saturate(939%) hue-rotate(118deg) brightness(94%) contrast(84%);
 
                 }
+
+                img:hover{
+                    cursor: pointer;
+                    // filter: invert(100%) sepia(60%) saturate(1469%) hue-rotate(204deg) brightness(111%) contrast(105%);
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(143deg) brightness(106%) contrast(101%);                }
         }
         
 }
