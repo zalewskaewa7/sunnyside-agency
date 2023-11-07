@@ -1,5 +1,6 @@
 <script setup>
 import Menu from './Menu.vue'
+import HamburgerIcon from './HamburgerIcon.vue';
 import MobileMenu from './MobileMenu.vue';
 
 
@@ -11,6 +12,7 @@ import MobileMenu from './MobileMenu.vue';
 
         </div>
         <Menu />
+        <HamburgerIcon />
         <MobileMenu />
         <div class="headerComponentBottom">
             <h1>We are creatives</h1>

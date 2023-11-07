@@ -42,8 +42,13 @@ const icons=[
             width: 35%;
             height: auto;
             cursor:pointer;
-            filter: invert(68%) sepia(60%) saturate(6890%) hue-rotate(163deg) brightness(97%) contrast(101%);
+            // filter: invert(68%) sepia(60%) saturate(6890%) hue-rotate(163deg) brightness(97%) contrast(101%);
             filter: invert(50%) sepia(19%) saturate(939%) hue-rotate(118deg) brightness(94%) contrast(84%);
+            // filter: invert(25%) sepia(70%) saturate(332%) hue-rotate(116deg) brightness(93%) contrast(89%);
+            // filter: invert(24%) sepia(73%) saturate(465%) hue-rotate(153deg) brightness(97%) contrast(94%);
+            // filter: invert(45%) sepia(41%) saturate(419%) hue-rotate(118deg) brightness(100%) contrast(91%);
+            // filter: invert(37%) sepia(11%) saturate(1560%) hue-rotate(116deg) brightness(93%) contrast(90%);
+            // filter: invert(31%) sepia(48%) saturate(362%) hue-rotate(115deg) brightness(92%) contrast(96%);
 
     }
         }
@@ -76,9 +81,8 @@ const icons=[
 
                 img{
                     padding: 2%;
-                    // filter: invert(68%) sepia(60%) saturate(6890%) hue-rotate(163deg) brightness(97%) contrast(101%);
-                    // filter: invert(48%) sepia(12%) saturate(1445%) hue-rotate(120deg) brightness(99%) contrast(89%);
-                    filter: invert(50%) sepia(19%) saturate(939%) hue-rotate(118deg) brightness(94%) contrast(84%);
+                    //  filter: invert(68%) sepia(60%) saturate(6890%) hue-rotate(163deg) brightness(97%) contrast(101%);
+                     filter: invert(50%) sepia(19%) saturate(939%) hue-rotate(118deg) brightness(94%) contrast(84%);
 
                 }
 
@@ -88,5 +92,30 @@ const icons=[
                     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(143deg) brightness(106%) contrast(101%);                }
         }
         
+}
+
+@media all and (max-width:  375px)  {
+    .footerComponent{
+        flex: 1 100%;
+        .logoDiv{
+            padding: 20%;
+            flex: 1 100%;
+            .logoImg{
+            width: 85%;
+            height: auto;
+        }
+    }
+
+    .footeMenu{
+        flex: 1 100%;
+    }
+
+    .mediaIconsDiv{
+        padding: 10% 6% 15% 6%;
+        flex: 0 60%;
+        justify-content: space-evenly;
+
+    }
+    }
 }
 </style>

@@ -24,4 +24,11 @@ const pictures = [
             height: auto;
         }
 }
+@media all and (max-width:  375px)  {
+    .picturesComponent{
+        .image{
+            flex: 0 50%;
+        }
+    }
+}
 </style>

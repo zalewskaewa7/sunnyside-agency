@@ -78,4 +78,15 @@ const testimonials = [
         }
     }
 }
+
+@media all and (max-width:  375px)  {
+    .testimonialsComponent{
+
+    .testimonialsDiv{
+    .clientTestimonial{
+    flex: 1 100%;
+    }
+    }
+}
+}
 </style>

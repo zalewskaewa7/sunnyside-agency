@@ -79,5 +79,34 @@ const photography = ref(
 
     }
     }
+
+    @media all and (max-width:  375px)  {
+        .graphicPhotographyComponent{
+            .graphic{
+            background-image: url("../../images/mobile/image-graphic-design.jpg");
+            color: hsl(167, 40%, 24%);
+            
+        }
+        .photography{
+            background-image: url("../../images/mobile/image-photography.jpg");
+            color:  hsl(198, 62%, 26%);;
+        }
+            .graphicPhtography{
+                padding: 20%  0% 15% 0%;
+                flex: 1 100%;
+                background-position: center; 
+
+                h2{
+                    font-size: 1.5rem;
+  
+                }
+                p{
+                    font-size: 1rem;
+
+                }
+            }
+        }
+
+    }
     
     </style>
