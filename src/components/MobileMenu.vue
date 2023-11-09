@@ -23,13 +23,16 @@
 }
 @media all and (max-width:  375px)  {
     .mobileMenuComponent{
-        margin: 2%;
-        padding: 6% 15%;
-        display: flex;
-        flex: 0 70%; 
+        margin: 2% 0;
+        padding: 2% 0%;
+        text-align: center;
+        display: none;
         flex-flow: row wrap;
-        justify-self: center;
         justify-content: flex-end;
+        position: absolute;
+        top: 7%;
+        left: 3.5%;
+        width: 92%;
         
         .triangle{
             
@@ -43,6 +46,9 @@
         }
         .mobileMenuDiv{
             background-color: hsl(0, 0%, 100%);
+            padding: 5% 3% 1% 3%;
+            display: flex;
+            justify-content: center;
             flex: 1 100%;
         }
         .menu{
@@ -56,9 +62,9 @@
                 flex: 0 60%;
                 list-style-type: none;
                 color:  hsl(232, 10%, 55%);
-                margin: 2%;
+                margin: 4%;
                 padding: 15% 0;
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 font-family: "BarlowThin";
                 text-align: center;
                 cursor: pointer;
@@ -71,6 +77,8 @@
                 background-color:  hsl(51, 100%, 49%);
                 color:  hsl(212, 27%, 19%);
                 border-radius: 25px;
+                font-size: 1.1rem;
+
                 }
         }
     }

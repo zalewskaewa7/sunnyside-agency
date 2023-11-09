@@ -1,9 +1,24 @@
 <script setup>
+import { ref } from 'vue';
 
+
+
+const openMenu = ref(false);
+
+function openMenuFunction() {
+    openMenu._value = !openMenu._value;
+// const open = !openMenu;
+console.log(openMenu);
+// return open;
+}
+defineProps({
+  openMenu: boolean,
+  
+})
 </script>
 
 <template>
-<div class="hamburgerIconComponent">
+<div @click= "openMenuFunction" class="hamburgerIconComponent">
 <img src="../images/icon-hamburger.svg"/>
 </div>
 </template>

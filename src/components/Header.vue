@@ -58,7 +58,7 @@ import MobileMenu from './MobileMenu.vue';
 h1{
     flex: 1 100%;
     color:  hsl(0, 0%, 100%);
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     text-transform: uppercase;
     text-align: center;
     margin: 5%;
