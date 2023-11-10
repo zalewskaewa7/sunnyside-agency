@@ -1,24 +1,11 @@
 <script setup>
-import { ref } from 'vue';
 
+    const emit = defineEmits(['isOpenMobileMenu']);
 
-
-const openMenu = ref(false);
-
-function openMenuFunction() {
-    openMenu._value = !openMenu._value;
-// const open = !openMenu;
-console.log(openMenu);
-// return open;
-}
-defineProps({
-  openMenu: boolean,
-  
-})
 </script>
 
 <template>
-<div @click= "openMenuFunction" class="hamburgerIconComponent">
+<div @click= "$emit('isOpenMobileMenu', payload)" class="hamburgerIconComponent">
 <img src="../images/icon-hamburger.svg"/>
 </div>
 </template>
@@ -26,6 +13,11 @@ defineProps({
  .mobileMenuComponent{
         display: none;
     }
+
+    .hamburgerIconComponent{
+        display: none;
+    }
+
 @media all and (max-width:  375px)  {
    
     .hamburgerIconComponent{

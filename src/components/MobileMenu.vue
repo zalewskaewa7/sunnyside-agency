@@ -1,9 +1,9 @@
 <script setup>
-
+const props = defineProps(['ifOpenMenu'])
 </script>
 
 <template>
-<div class="mobileMenuComponent">
+<div v-show="props.ifOpenMenu" class="mobileMenuComponent">
     <div class="triangle"></div>
     <div class="mobileMenuDiv"> 
         <ul class="menu">
@@ -26,7 +26,7 @@
         margin: 2% 0;
         padding: 2% 0%;
         text-align: center;
-        display: none;
+        display: flex;
         flex-flow: row wrap;
         justify-content: flex-end;
         position: absolute;
@@ -62,9 +62,9 @@
                 flex: 0 60%;
                 list-style-type: none;
                 color:  hsl(232, 10%, 55%);
-                margin: 4%;
-                padding: 15% 0;
-                font-size: 1.2rem;
+                margin: 10%;
+                padding: 20% 0;
+                font-size: 1.3rem;
                 font-family: "BarlowThin";
                 text-align: center;
                 cursor: pointer;
@@ -78,6 +78,7 @@
                 color:  hsl(212, 27%, 19%);
                 border-radius: 25px;
                 font-size: 1.1rem;
+                font-family: "Fraunces";
 
                 }
         }

@@ -2,7 +2,12 @@
 import Menu from './Menu.vue'
 import HamburgerIcon from './HamburgerIcon.vue';
 import MobileMenu from './MobileMenu.vue';
+import { ref } from 'vue';
 
+const openMenu = ref(false);
+ function openMobileMenu(){
+    openMenu.value=!openMenu.value;
+ }
 
 </script>
 <template>
@@ -12,8 +17,8 @@ import MobileMenu from './MobileMenu.vue';
 
         </div>
         <Menu />
-        <HamburgerIcon />
-        <MobileMenu />
+        <HamburgerIcon  v-on:is-open-Mobile-Menu="openMobileMenu" title="Hello Ewunia"/>
+        <MobileMenu :ifOpenMenu="openMenu"/>
         <div class="headerComponentBottom">
             <h1>We are creatives</h1>
         <img alt="arrow down" class="arrowDown" src="../images/icon-arrow-down.svg" />
@@ -26,6 +31,7 @@ import MobileMenu from './MobileMenu.vue';
 .headerComponent{
     margin: 0;
     background-image: url("../images/desktop/image-header.jpg");
+    background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
@@ -62,7 +68,7 @@ h1{
     text-transform: uppercase;
     text-align: center;
     margin: 5%;
-    font-family: Fraunces;
+    font-family: "Fraunces";
     letter-spacing: 8px;
      font-weight: 900;
 }
