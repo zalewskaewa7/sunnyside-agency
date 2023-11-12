@@ -11,7 +11,7 @@ const icons=[
 <div class="footerComponent">
 
     <div class="logoDiv">
-   <img class="logoImg" src="../images/logo.svg"/> 
+   <img alt="logo" class="logoImg" src="../images/logo.svg"/> 
 </div>
 <ul class="footeMenu">
         <li>About</li>
@@ -20,7 +20,7 @@ const icons=[
     </ul>
 
     <div class="mediaIconsDiv">
-        <img v-for="icon in icons" :src="icon.src"/>
+        <img alt="media icon" v-for="icon in icons" :src="icon.src"/>
     </div>
 </div>
 
