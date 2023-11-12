@@ -6,7 +6,7 @@
 
 <template>
 <div @click= "$emit('isOpenMobileMenu', payload)" class="hamburgerIconComponent">
-<img src="../images/icon-hamburger.svg"/>
+<img alt="hamburger icon" src="../images/icon-hamburger.svg"/>
 </div>
 </template>
 <style lang="scss" scoped>
