@@ -20,7 +20,7 @@ const icons=[
     </ul>
 
     <div class="mediaIconsDiv">
-        <img alt="media icon" v-for="icon in icons" :src="icon.src"/>
+        <img  v-for="icon in icons" :src="icon.src" alt="media icon"/>
     </div>
 </div>
 
