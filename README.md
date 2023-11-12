@@ -1,14 +1,15 @@
 # sunnyside agency
+# Frontend Mentor project - Sunnyside agency
+[Frontend Mentor](https://www.frontendmentor.io) challenges help me improve my coding skills by building realistic projects.
 
-This template should help get you started developing with Vue 3 in Vite.
+To completed this project I use Vue3 app and sass css.
 
-## Recommended IDE Setup
+- Here is design for desktop from Frontend Mentor:
+![Design desktop for the sunnyside agency coding challenge](./public/images/desktop-design.jpg)
+- This is my screenshot:
+![Design desktop for the sunnyside agency component coding challenge](./public/images/Screenshot 2023-11-12 at 20-56-06 Sunnyside agency.png)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+All challenge on https://zalewskaewa7.github.io/sunnyside-agency/
 
 ## Project Setup
 
