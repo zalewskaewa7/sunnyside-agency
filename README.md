@@ -1,4 +1,3 @@
-# sunnyside agency
 # Frontend Mentor project - Sunnyside agency
 [Frontend Mentor](https://www.frontendmentor.io) challenges help me improve my coding skills by building realistic projects.
 
